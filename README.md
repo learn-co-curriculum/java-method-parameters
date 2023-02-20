@@ -40,8 +40,8 @@ public class MethodExample {
 }
 ```
 
-In the above code, we created a new method called `cook()`. Let's look at the
-method header a little closer of this method:
+In the above code, we created a new method called `cook()`. Let's take a
+closer look at this method header:
 
 ![method-header](https://curriculum-content.s3.amazonaws.com/java-mod-1/methods-with-parameters/method-header-parameters.png)
 
