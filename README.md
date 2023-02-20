@@ -59,21 +59,21 @@ method:
 <iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=public%20class%20MethodExample%20%7B%0A%0A%20%20%20%20public%20static%20void%20welcome%28%29%20%7B%0A%20%20%20%20%20%20%20%20System.out.println%28%22Welcome%20neighbors!%22%29%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20public%20static%20void%20announce%28%29%20%7B%0A%20%20%20%20%20%20%20%20System.out.println%28%22Food%20will%20be%20served%20in%2015%20minutes.%22%29%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20public%20static%20void%20farewell%28%29%20%7B%0A%20%20%20%20%20%20%20%20System.out.println%28%22Thanks%20for%20coming%20neighbors!%22%29%3B%0A%20%20%20%20%20%20%20%20System.out.println%28%22See%20you%20next%20year!%22%29%3B%0A%20%20%20%20%7D%0A%20%20%20%20%0A%20%20%20%20//%20New%20method%0A%20%20%20%20public%20static%20void%20cook%28String%20food%29%20%7B%0A%20%20%20%20%20%20%20%20System.out.println%28%22Okay,%20I%20can%20cook%20%22%20%2B%20food%29%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20public%20static%20void%20main%20%28String%5B%5D%20args%29%20%7B%0A%20%20%20%20%20%20%20%20welcome%28%29%3B%0A%20%20%20%20%20%20%20%20cook%28%22Hot%20dogs%22%29%3B%20%20%20%20//%20Call%20the%20new%20method%20cook%28%29%0A%20%20%20%20%20%20%20%20farewell%28%29%3B%0A%20%20%20%20%7D%0A%7D&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=6&heapPrimitives=nevernest&origin=opt-frontend.js&py=java&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
 
 Notice when we click "Next >", the execution jumps to the `cook()` method. But
-also note that the `food` variable parameter is now set to `"Hot dogs"`. In the
-`main()` method, we call the `cook()` method and pass in the parameter "Hot
+also note that the `food` variable is now set to `"Hot dogs"`. In the `main()`
+method, we call the `cook()` method and pass in the argument "Hot
 dogs". This value then gets copied when calling the `cook()` method and assigns
 the parameter variable, `food` to "Hot dogs".
 
 ![method-parameter-passing](https://curriculum-content.s3.amazonaws.com/java-mod-1/methods-with-parameters/method-parameter-passing-visual.png)
 
-The parameter, `food`, acts like a variable now within the `cook()` method. We
-pass in parameters when we want to initialize a variable within that method
-with a value that is known in the calling method. The calling method, in this
-case, is the `main()` method since that is the method calling `cook()`.
+Note: **Parameters** refers to the list of variables in a method declaration.
+**Arguments** are the actual values that are passed in when the method is
+invoked. When a method is invoked, the arguments used must match the
+declaration's parameters in type and order.
 
-The parameter then becomes a local variable to that method; meaning, the `food`
-variable is only accessible within the `cook()` method. We would not be able to
-access the value of `food` outside the `cook()` method.
+`food` acts like a local variable now within the `cook()` method; meaning, the
+`food` variable is only accessible within the `cook()` method. We would not be
+able to access the value of `food` outside the `cook()` method.
 
 If we continue to click "Next >" we'll see the new output of our block party
 program:
